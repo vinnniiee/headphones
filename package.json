@@ -1,0 +1,53 @@
+{
+  "name": "headphones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.ts",
+  "scripts": {
+    "start:dev:build": "tsc -w",
+    "start:dev:server": "nodemon server/build/index.js",
+    "start:dev:client": "npm start --prefix client",
+    "start": "concurrently npm:start:dev:*",
+    "data:populate": "ts-node server/seeder.ts",
+    "data:erase": "ts-node server/seeder.ts -d",
+    "build:server": "tsc",
+    "build:client": "npm run build --prefix client",
+    "build": "npm install && npm install --prefix client && npm run build:server && npm run build:client",
+    "start:prod": "node server/build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinniiee/headphones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinniiee/headphones/issues"
+  },
+  "homepage": "https://github.com/vinniiee/headphones#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/s3-request-presigner": "^3.600.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/multer": "^1.4.11",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jimp": "^0.22.12",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

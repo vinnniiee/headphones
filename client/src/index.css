@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./scrollbar.css";
+main{
+  min-height:75vh;
+}
