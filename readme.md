@@ -49,6 +49,11 @@ Deployed on - [Render](https://headphones-nzgi.onrender.com/)
     MONGO_URI=your_mongodb_uri
     JWT_SECRET=your_jwt_secret
     PAYPAL_CLIENT_ID=your_paypal_client_id
+    AWS_ACCESS_KEY_ID=your_aws_access_key_id
+    AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+    AWS_BUCKET_NAME=your_aws_bucket_name
+    AWS_BUCKET_REGION=your_aws_bucket_region
+    PAGINATION_LIMIT=limit_for_paginate_component (optional)
     ```
 
 ## Usage

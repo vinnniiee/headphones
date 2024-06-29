@@ -49,8 +49,8 @@ const server = async () => {
     if (
       !process.env.AWS_ACCESS_KEY_ID ||
       !process.env.AWS_SECRET_ACCESS_KEY ||
-      !process.env.BUCKET_NAME ||
-      !process.env.BUCKET_REGION
+      !process.env.AWS_BUCKET_NAME ||
+      !process.env.AWS_BUCKET_REGION
     ) {
       throw new Error("AWS client is not configured properly.");
     }
