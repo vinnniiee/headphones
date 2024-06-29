@@ -57,9 +57,7 @@ Deployed on - [Render](https://headphones-nzgi.onrender.com/)
 
 1. Build and start the development server:
     ```bash
-    npm run start:dev:build
-    npm run start:dev:server
-    npm run start:dev:client
+    npm start
     ```
 
 2. Open your browser and navigate to `http://localhost:3000`.
@@ -94,7 +92,6 @@ Deployed on - [Render](https://headphones-nzgi.onrender.com/)
 ### Server
 
 - **@aws-sdk/client-s3 & @aws-sdk/s3-request-presigner**: Used for managing file uploads to AWS S3.
-- **jimp & sharp**: Libraries for image processing and manipulation.
 
 ### Client
 
