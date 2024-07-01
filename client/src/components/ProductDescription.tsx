@@ -45,7 +45,7 @@ const ProductDescription = ({ p }: { p: Product }) => {
               <div className="flex justify-center items-center gap-1 my-2">
                 <Ratings rating={p.rating} />
                 <p className="text-2xs text-black/70 flex h-4 mt-0.5 tracking-tighter">
-                  {p.numReviews} reviews
+                  {p.numReviews} ratings
                 </p>
               </div>
               <div className="flex items-center w-full justify-between">

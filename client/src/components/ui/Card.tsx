@@ -42,7 +42,7 @@ const Card = (props: CardProps) => {
           <div className="flex justify-center items-center gap-1">
             <Ratings rating={rating} />
             <p className="text-2xs text-black/70 flex h-4 mt-0.5 tracking-tighter">
-              {reviewsCount} reviews
+              {reviewsCount} ratings
             </p>
           </div>
           <div className="flex gap-1 mt-.5">
