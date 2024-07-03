@@ -37,6 +37,10 @@ const Login = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
+      <div className="flex flex-col w-full max-w-lg text-xs my-4 justify-start">
+      <p>Admin Test Email: admin@email.com</p>
+      <p>Admin Test Password: 123456</p>
+      </div>
       <FormContainer>
         <Form className="w-full" onSubmit={submitHandler}>
           <Form.Group className="my-2" controlId="email">
