@@ -92,6 +92,7 @@ const AllProducts = () => {
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>
+                    <div className="flex items-center h-full justify-center">
                     <LinkContainer to={`/admin/products/${product._id}/edit`}>
                       <Button variant="light" className="btn-sm mx-2">
                         <FaEdit />
@@ -104,6 +105,7 @@ const AllProducts = () => {
                     >
                       <FaTrash style={{ color: "white" }} />
                     </Button>
+                    </div>
                   </td>
                 </tr>
               ))}
